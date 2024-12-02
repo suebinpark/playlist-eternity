@@ -67,7 +67,7 @@ function postEntry() {
   // 등록
   console.log("author:", author);
   axios
-    .post("http://localhost:8080/comments", {
+    .post("https://port-0-playlist-eternity-m47c1rlvf34a3653.sel4.cloudtype.app/comments", {
       author,
       content,
       commenter,
@@ -84,7 +84,7 @@ function postEntry() {
 function deleteEntry(id) {
   //삭제
   axios
-    .delete(`http://localhost:8080/comments/${id}`)
+    .delete(`https://port-0-playlist-eternity-m47c1rlvf34a3653.sel4.cloudtype.app/comments/${id}`)
     .then((res) => {
       console.log("Entry deleted:", res.data);
       displayEntries();
@@ -95,7 +95,7 @@ function deleteEntry(id) {
 function displayEntries() {
   // Axios를 사용하여 항목 조회
   axios
-    .get("http://localhost:8080/comments")
+    .get("https://port-0-playlist-eternity-m47c1rlvf34a3653.sel4.cloudtype.app/comments")
     .then((res) => {
       const entriesDiv = document.getElementById("entries");
       entriesDiv.innerHTML = "";
