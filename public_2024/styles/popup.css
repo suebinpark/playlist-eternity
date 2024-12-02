@@ -1,0 +1,46 @@
+.onboarding,
+.messageSent {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.onboarding {
+  justify-content: center;
+  background-color: white;
+  animation: hideObject 0.7s 2.5s ease-in-out forwards;
+}
+.messageSent {
+  display: none;
+  justify-content: space-between;
+}
+.home_icon {
+  margin-bottom: 55px;
+}
+.graphic_icon {
+  animation: showObject 1.2s ease-in-out;
+}
+@media only screen and (orientation: portrait) {
+  .home_icon {
+    width: 55vw;
+  }
+  .graphic_icon {
+    width: 60vw;
+    margin-bottom: 35vh;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .home_icon {
+    width: 40vh;
+  }
+  .graphic_icon {
+    width: 50vh;
+    margin-bottom: 32vh;
+  }
+}
