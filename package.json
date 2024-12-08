@@ -1,0 +1,27 @@
+{
+  "name": "sqlexpress",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "Suebin Park",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "fs": "^0.0.1-security",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.7",
+    "routes": "^2.1.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "vercel": "^39.1.2"
+  }
+}
