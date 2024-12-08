@@ -1,0 +1,65 @@
+.text--lg,
+.text--m,
+.text--sm,
+.text--xs {
+  font-family: "BookkGothic-Lt";
+  font-weight: 300;
+}
+
+.text--lg {
+  font-size: 16px;
+}
+.text--m {
+  font-size: 14px;
+}
+.text--sm {
+  font-size: 12px;
+}
+.text--xs {
+  font-size: 10.5px;
+}
+
+.text_colorChange {
+  color: #252525;
+  transition: color 0.5s ease-in-out;
+}
+
+#copyright {
+  margin-bottom: 6vh;
+  text-align: center;
+}
+#description {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+#description h1 {
+  margin-bottom: 10px;
+}
+
+#description p {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.transparent_box {
+  border-radius: 15px;
+  margin-left: 5px;
+  padding: 5px;
+  width: 140px;
+  border-style: none;
+  background-color: rgba(250, 250, 250, 0.65);
+  box-shadow: 0 0 12px 6px rgba(180, 180, 180, 0.1);
+  border: none;
+}
+.transparent_box--large {
+  width: 90%;
+  height: 56%;
+  padding: 15px;
+  line-height: 1.8;
+  resize: none;
+}

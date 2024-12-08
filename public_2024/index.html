@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>영원플레이리스트</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="onboarding">
+      <img src="./images/main.png" class="home_icon" />
+    </main>
+
+    <div class="messageSent">
+      <h3 id="copyright" class="text--xs">©영원플레이리스트</h3>
+      <img src="" class="graphic_icon" />
+    </div>
+
+    <section>
+      <h3 id="copyright" class="text--xs text_colorChange">
+        ©영원플레이리스트
+      </h3>
+      <div id="description">
+        <h1 class="text--lg text_colorChange">REVIEW</h1>
+        <p class="text--sm text_colorChange">
+          단편선을 읽고 작가님들에게 후기를 남겨주세요.<br />
+          소중한 감상을 모아 각 작가님들에게 전달하겠습니다.
+        </p>
+      </div>
+      <form id="commentForm">
+        <div class="author_box">
+          <div>
+            <label for="author" class="text--m text_colorChange">To</label>
+            <select
+              name="author"
+              id="author"
+              class="select-css text--sm transparent_box"
+            >
+              <option id="default" value="">--작가를 선택해주세요--</option>
+              <option id="dp" value="dp">dp</option>
+              <option id="nhy" value="남하연">남하연</option>
+              <option id="jb" value="자비">자비</option>
+              <option id="cj" value="춘진">춘진</option>
+              <option id="sf" value="smilingface">:)</option>
+            </select>
+          </div>
+        </div>
+        <textarea
+          id="content"
+          class="textarea_box text--sm transparent_box transparent_box--large"
+          required
+        ></textarea>
+        <div class="commenter_box">
+          <div>
+            <label for="commenter" class="text--m text_colorChange">From</label>
+            <input
+              type="text"
+              id="commenter"
+              name="commenter"
+              class="text--sm transparent_box"
+              required
+            />
+          </div>
+        </div>
+        <div class="submit_button">
+          <button type="submit" class="text--sm">SEND</button>
+        </div>
+      </form>
+    </section>
+    <div id="entries"></div>
+
+    <script src="./javascript/changeBackgroundbyAuthor.js"></script>
+    <script src="./javascript/handleEntries.js"></script>
+  </body>
+</html>
