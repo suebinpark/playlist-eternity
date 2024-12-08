@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const path = require("path");
 const cors = require("cors");
 const base_url =
-  "https://port-0-playlist-eternity-m47c1rlvf34a3653.sel4.cloudtype.app/";
+  "https://port-0-playlist-eternity-2024-m47c1rlvf34a3653.sel4.cloudtype.app/";
 
 dotenv.config();
 const entriesRouter = require("./routes/comments");
